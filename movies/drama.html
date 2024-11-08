@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drama Movies - MovieFlix</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.bunny.net/css?family=Poppins:400,500,600,700">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MovieFlix</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="action.html">Action</a></li>
+                <li><a href="drama.html">Drama</a></li>
+                <li><a href="comedy.html">Comedy</a></li>
+                <li><button id="loginBtn" class="btn-login">Log In</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Log In</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Log In</button>
+            </form>
+            <p class="modal-footer">
+                Don't have an account? <a href="#" id="signupLink">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero" style="background-image: url('/images/hero-bg.jpg');">
+            <h1>Drama Movies</h1>
+            <p>Explore powerful stories that move and inspire</p>
+        </section>
+
+        <section class="movie-section">
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <img src="/images/shawshank.jpg" alt="The Shawshank Redemption">
+                    <div class="movie-info">
+                        <h3>The Shawshank Redemption</h3>
+                        <p>Year: 1994</p>
+                        <p>Director: Frank Darabont</p>
+                        <p>Rating: 9.8/10</p>
+                        <a href="shawshank.html" class="btn">Learn More</a>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <img src="/images/pulp-fiction.jpg" alt="Pulp Fiction">
+                    <div class="movie-info">
+                        <h3>Pulp Fiction</h3>
+                        <p>Year: 1994</p>
+                        <p>Director: Quentin Tarantino</p>
+                        <p>Rating: 9.5/10</p>
+                        <a href="pulp-fiction.html" class="btn">Learn More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MovieFlix</h3>
+                <p>Your ultimate movie recommendation platform</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../imprint.html">Imprint</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Email: info@movieflix.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MovieFlix. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>

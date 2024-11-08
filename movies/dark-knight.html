@@ -1,0 +1,33 @@
+<diff>@@ -14,8 +14,7 @@
+                 <li><a href="action.html">Action</a></li>
+                 <li><a href="drama.html">Drama</a></li>
+                 <li><a href="comedy.html">Comedy</a></li>
+-                <li><a href="../contact.html">Contact</a></li>
+-                <li><a href="../imprint.html">Imprint</a></li>
++                <li><button id="loginBtn" class="btn-login">Log In</button></li>
+             </ul>
+         </nav>
+-    </header>
++    </header>
++
++    <div id="loginModal" class="modal">
++        <div class="modal-content">
++            <span class="close">&times;</span>
++            <h2>Log In</h2>
++            <form id="loginForm">
++                <div class="form-group">
++                    <label for="email">Email:</label>
++                    <input type="email" id="email" required>
++                </div>
++                <div class="form-group">
++                    <label for="password">Password:</label>
++                    <input type="password" id="password" required>
++                </div>
++                <button type="submit" class="btn">Log In</button>
++            </form>
++            <p class="modal-footer">
++                Don't have an account? <a href="#" id="signupLink">Sign Up</a>
++            </p>
++        </div>
++    </div>
+</diff>
